@@ -1,0 +1,113 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ing{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+}
+
+
+
+ 
+
+
+.main-entrance {
+    display: block;
+    position: relative;
+    background-image: url("https://www.trawell.in/images/pics/maharashtra_best_main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    z-index: 1;
+   
+}
+
+.main-entrance::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+.main-entrance-container {
+    position: relative;
+    padding: 50px; 
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+}
+
+
+.btn{
+    padding: 5px;
+}
+
+.div {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+ 
+  
+
+  .menu-section{
+    background-color: rgb(164, 22, 22);
+    width: 100%;
+   color: white;
+   flex-direction: column;
+   gap: 20px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 100;
+   display:none;
+  }
+
+
+  .menu-container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .menu-container2{
+    display: flex;
+    gap: 20px;
+    justify-content:space-around;
+  }
+  .menu-items ul li {
+    text-decoration: none;font-weight: 1px;
+    line-height: 2.5;
+    list-style: none;
+}
+.menu-items p{
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.menu-items .last-item{
+    padding: 10px;
+}
+
+
+  
