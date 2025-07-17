@@ -22,6 +22,29 @@
 
 
 
+//  menuButton.addEventListener("click", ()=> {
+ 
+//    if (menuSection.style.display === "block") {
+//      menuSection.style.display = "none";       
+//    }
+//     else {
+//      menuSection.style.display = "block";       
+//    }
+
+//  });
+
+//  button.addEventListener("click",()=>{
+
+//     if(menuSection.style.diplay === "none"){
+//         menuSection.style.diplay = "block";
+//     }
+//     else{
+//         menuSection.style.display = "none";    
+//     }
+//  })
+
+
+
 
 
  var menuSection = document.querySelector(".menu-section");
@@ -30,27 +53,44 @@
  var button =document.getElementById("button");
  
 
- 
- menuButton.addEventListener("click", ()=> {
- 
-   if (menuSection.style.display === "block") {
-     menuSection.style.display = "none";       
-   }
-    else {
-     menuSection.style.display = "block";       
-   }
 
- });
+ menuButton.addEventListener("click",()=>{
+  
+  if(menuSection.classList.contains("show")){
+    menuSection.classList.remove("show");
+  }
+  else{
+    menuSection.classList.add("show");
+    menuSection.classList.toggle("active");
+  }
 
- button.addEventListener("click",()=>{
-
-    if(menuSection.style.diplay === "none"){
-        menuSection.style.diplay = "block";
-    }
-    else{
-        menuSection.style.display = "none";    
-    }
  })
+ button.addEventListener("click",()=>{
+  if(menuSection.classList.contains("show")){
+    menuSection.classList.remove("show");
+  }
+  else{
+    menuSection.classList.add("show");
+  }
+ })
+
+
+ const swiper = new Swiper("#first-swiper",{
+  
+  loop: true,
+  pagination:{
+    el: '.swiper-pagination',
+  },
+  navigation:{
+    nextEl: ".swiper-button-next",
+    prevEl:".swiper-button-prev",
+  },
+ })
+
+ 
+
+
+
 
 
 

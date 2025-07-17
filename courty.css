@@ -6,21 +6,22 @@
     box-sizing: border-box;
 }
 
-.ing{
+
+body{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.img{
     height: 100%;
     width: 100%;
 }
-body{
-    font-family: "STIX Two Text", serif;
-    font-optical-sizing: auto;
-    font-weight:100;
-    font-style: normal;
+
+.main-entrance-tittle h5{
+    margin-left: 60px;
 }
-
-
-
- 
-
 
 .main-entrance {
     display: block;
@@ -29,7 +30,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
-    z-index: 1;
+    z-index: 0;
    
 }
 
@@ -41,9 +42,48 @@ body{
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
+    z-index: 1;
 }
 
+.main-entrance2{
+    display: block;
+    position: relative;
+    background-image: url("https://i.natgeofe.com/n/34ad8c2e-c03e-40cc-965c-f3ded9b0eca6/01-best-buddhist-temples-dgk07h_16x9.jpg?w=1200");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    z-index: 0;
+}
+.main-entrance2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.main-entrance3{
+    display: block;
+    position: relative;
+    background-image: url("https://news.cgtn.com/news/3d3d674e31416a4e34457a6333566d54/img/6a10a4ae54774104974300bfdca8161e/6a10a4ae54774104974300bfdca8161e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    z-index: 0;
+}
+.main-entrance3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
 .main-entrance-container {
     position: relative;
     padding: 50px; 
@@ -66,48 +106,94 @@ body{
     margin: 6px 0;
   }
 
- 
+ .menu-section.show{
+    /* display: block; */
+    opacity: 1;
+    max-width: 100vw;
+ }
   
 
   .menu-section{
-    background-color: rgb(164, 22, 22);
+    background-color: rgb(164, 37, 37);
     width: 100%;
    color: white;
    flex-direction: column;
    gap: 20px;
    position: fixed;
+   max-width: 0;
    top: 0;
    left: 0;
    width: 100vw;
    height: 100vh;
    z-index: 100;
-   display:none;
+   /* display:none; */
+   opacity: 0;
+   transition: all 0.5s ease;
   }
 
+
+  .menu-tittle h5{
+    margin-left: 60px;
+  }
+  .nav-section-container{
+     padding-top: 20px;
+    padding-left: 50px;
+  }
 
   .menu-container1{
     display: flex;
     justify-content: space-between;
     padding: 50px;
   }
+
   .menu-container2{
     display: flex;
-    gap: 20px;
-    justify-content:space-around;
+    gap: 300px;
+    padding-top: 50px;
   }
+
   .menu-items ul li {
     text-decoration: none;font-weight: 1px;
     line-height: 2.5;
     list-style: none;
+    font-size: 1.7rem;
 }
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .menu-items p{
     line-height: 1.5;
     letter-spacing: 1.5px;
+    font-size:0.9rem;
 }
 
-.menu-items .last-item{
+
+.menu-items .last-item2{
+    display: flex;
+    gap: 30px;
+}
+
+
+.border{
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     padding: 10px;
 }
 
+
+.one-line-quote{
+    display: flex;
+        background-color: rgb(251, 246, 239);
+       height: 250px;
+        color: brown;
+        align-items: center;
+        justify-content: center;
+}
 
   
