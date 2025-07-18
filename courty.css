@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -7,19 +5,19 @@
 }
 
 
-body{
+body {
     font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-.img{
+.img {
     height: 100%;
     width: 100%;
 }
 
-.main-entrance-tittle h5{
+.main-entrance-tittle h5 {
     margin-left: 60px;
 }
 
@@ -31,7 +29,7 @@ body{
     background-size: cover;
     height: 900px;
     z-index: 0;
-   
+
 }
 
 .main-entrance::after {
@@ -41,11 +39,11 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-.main-entrance2{
+.main-entrance2 {
     display: block;
     position: relative;
     background-image: url("https://i.natgeofe.com/n/34ad8c2e-c03e-40cc-965c-f3ded9b0eca6/01-best-buddhist-temples-dgk07h_16x9.jpg?w=1200");
@@ -54,18 +52,19 @@ body{
     height: 900px;
     z-index: 0;
 }
-.main-entrance2::after{
+
+.main-entrance2::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-.main-entrance3{
+.main-entrance3 {
     display: block;
     position: relative;
     background-image: url("https://news.cgtn.com/news/3d3d674e31416a4e34457a6333566d54/img/6a10a4ae54774104974300bfdca8161e/6a10a4ae54774104974300bfdca8161e.jpg");
@@ -74,19 +73,21 @@ body{
     height: 900px;
     z-index: 0;
 }
-.main-entrance3::after{
+
+.main-entrance3::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .main-entrance-container {
     position: relative;
-    padding: 50px; 
+    padding: 50px;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -95,7 +96,7 @@ body{
 }
 
 
-.btn{
+.btn {
     padding: 5px;
 }
 
@@ -104,56 +105,58 @@ body{
     height: 2px;
     background-color: white;
     margin: 6px 0;
-  }
+}
 
- .menu-section.show{
+.menu-section.show {
     /* display: block; */
     opacity: 1;
     max-width: 100vw;
- }
-  
+}
 
-  .menu-section{
+
+.menu-section {
     background-color: rgb(164, 37, 37);
     width: 100%;
-   color: white;
-   flex-direction: column;
-   gap: 20px;
-   position: fixed;
-   max-width: 0;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   z-index: 100;
-   /* display:none; */
-   opacity: 0;
-   transition: all 0.5s ease;
-  }
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    max-width: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    /* display:none; */
+    opacity: 0;
+    transition: all 0.5s ease;
+}
 
 
-  .menu-tittle h5{
+.menu-tittle h5 {
     margin-left: 60px;
-  }
-  .nav-section-container{
-     padding-top: 20px;
-    padding-left: 50px;
-  }
+}
 
-  .menu-container1{
+.nav-section-container {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.menu-container1 {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-  }
+}
 
-  .menu-container2{
+.menu-container2 {
     display: flex;
     gap: 300px;
     padding-top: 50px;
-  }
+}
 
-  .menu-items ul li {
-    text-decoration: none;font-weight: 1px;
+.menu-items ul li {
+    text-decoration: none;
+    font-weight: 1px;
     line-height: 2.5;
     list-style: none;
     font-size: 1.7rem;
@@ -165,20 +168,20 @@ body{
     gap: 80px;
 }
 
-.menu-items p{
+.menu-items p {
     line-height: 1.5;
     letter-spacing: 1.5px;
-    font-size:0.9rem;
+    font-size: 0.9rem;
 }
 
 
-.menu-items .last-item2{
+.menu-items .last-item2 {
     display: flex;
     gap: 30px;
 }
 
 
-.border{
+.border {
     border: 1px solid white;
     height: 50px;
     width: 50px;
@@ -187,13 +190,165 @@ body{
 }
 
 
-.one-line-quote{
+
+.one-line-quote {
     display: flex;
-        background-color: rgb(251, 246, 239);
-       height: 250px;
-        color: brown;
-        align-items: center;
-        justify-content: center;
+    background-color: rgb(251, 246, 239);
+    height: 250px;
+    color: brown;
+    align-items: center;
+    justify-content: center;
+}
+.journey-section-lower-part{
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    gap: 20%;
+}
+.content-heading h4{
+    color: gray;
+    font-size: 1rem;
+}
+.content-heading h2{
+    color: brown;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.content-paragraph p{
+    color: gray;
+    font-size: 1rem;
+    line-height: 2.1rem;
+}
+.explore-btn{
+     border: none;
+    padding: 10px;
+    border: 1px solid brown;
+    background-color:rgb(251, 246, 239);
+    color: brown;
+    width: 100px;
+    font-size: 0.8rem;
+    transition: all 0.5s ease; 
+
 }
 
-  
+.explore-btn:hover{
+    background-color: brown;
+    color: white;
+}
+
+.image-part img{
+    width: 100%;
+}
+.content-part{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    line-height: 30px;
+}
+
+.image-part{
+    width: 50%;
+}
+
+/* .quote-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+} */
+.backround-image{
+    position: relative;
+    background-image: url("https://cdn.tovp.org/wp-content/uploads/2025/02/tovp-let-the-world-come-to-mayapur-dark46-slide-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    z-index: 0;
+}
+.backround-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(72, 70, 70, 0.5);
+    z-index: 1;
+}
+.the-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 145px;
+}
+.line1{
+    height: 50px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 300px;
+}
+.line2{
+    height: 50px;
+    width: 15px;
+    position: relative;
+    background-color: white;
+    rotate: 40deg;
+    margin-right: 20px;
+}
+.the-quote{
+    margin-top: 40px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 25px;
+}
+.line3{
+    height: 2px;
+    margin-top: 40px;
+    width: 100px;
+    background-color: white;
+}
+.quote-last-content{
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5rem;
+
+}
+.trails-tours-section{
+    width: 100%;
+    background-color: rgb(251, 246, 239);
+}
+
+/* .main-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    z-index: 0;
+}
+
+.images{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 400px;        
+}
+ .images::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(89, 87, 87, 0.5);
+    z-index: 2;
+}    */
+
+
+
+
+
+
+

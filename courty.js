@@ -87,6 +87,34 @@
   },
  })
 
+
+
+ const secswiper = new Swiper("#second-swiper",{
+loop:true,
+pagination:{
+  el:".swiper-sec-pagination",
+},
+scrollbar:{
+  el:".swiper-sec-scrollbar",
+},
+ });
+
+
+
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const secswiper = new Swiper("#second-swiper", {
+  //     loop: true,
+  //     pagination: {
+  //       el: ".swiper-pagination",
+  //     },
+  //     scrollbar: {
+  //       el: ".swiper-scrollbar",
+  //     },
+  //   });
+  // });
+
+
+
  
 
 
