@@ -1,32 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider for Team Section By AbdulDev</title>
+  <!-- CSS Link -->
+   <link rel="stylesheet" href="./position.css">
+   <!-- Icon Link -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!-- Swiperjs CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
 
+  <div class="container-slide swiper">
+    <div class="sec-slider-wrapper" id="sec-slider-wrapper">
+      <div class="card-box swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="content-img">
+            
+            <div class="card-img">
+              <img decoding="async" src="https://madrasnallamadrasblog.wordpress.com/wp-content/uploads/2016/02/dsc3263.jpg?w=809" alt="User Image" class="card-image">
+            </div>
+          </div>
+         
+        </div>
+        <!-- Copy and Paste 5 more Times -->
+        <div class="card swiper-slide">
+          <div class="content-img">
+            <span class="overlay"></span>
+            <div class="card-img">
+              <img decoding="async" src="https://madrasnallamadrasblog.wordpress.com/wp-content/uploads/2016/02/dsc3263.jpg?w=809" alt="User Image" class="card-image">
+            </div>
+          </div>
 
-<style>
-    .box1 {
-  position: relative;
-  top: 10px;
-  background-color: red;
-  height: 100px;
-  width: 100px;
- 
-}
+         
+        </div>
 
+        <div class="card swiper-slide">
+          <div class="content-img">
+            <span class="overlay"></span>
+            <div class="card-img">
+              <img decoding="async" src="https://madrasnallamadrasblog.wordpress.com/wp-content/uploads/2016/02/dsc3263.jpg?w=809" alt="User Image" class="card-image">
+            </div>
+          </div>
+          
+        </div>
 
-.box2{
-    position:absolute;
-    background-color: blue;
-    height: 100px;
-    width: 100px;
-   
-}
+        <div class="card swiper-slide">
+          <div class="content-img">
+            <span class="overlay"></span>
+            <div class="card-img">
+              <img decoding="async" src="https://madrasnallamadrasblog.wordpress.com/wp-content/uploads/2016/02/dsc3263.jpg?w=809" alt="User Image" class="card-image">
+            </div>
+          </div>
+         
+        </div>
 
-
-</style>
-
-
-<div class="box1">
-</div>
-<div class="box2">
        
-</div>
+      </div>
+      <div class="sec-swiper-pagination"></div>
+      <div class="swiper-slide-button sec-swiper-button-prev"></div>
+      <div class="swiper-slide-button sec-swiper-button-next"></div>
+    </div>
+  </div>
 
+  <!-- Swiper JS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Custom JS Script  -->
+   <script src="./position.js"></script>
+</body>
+</html>

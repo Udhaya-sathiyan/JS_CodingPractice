@@ -315,36 +315,147 @@ body {
     font-size: 1.5rem;
 
 }
+
+
+
+
 .trails-tours-section{
     width: 100%;
     background-color: rgb(251, 246, 239);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-/* .main-container{
+.container-slide{
+    width: 1120px;
+    max-width: 100%;
+  }
+  .slider-wrapper{
+    margin:  0 30px 20px;
+    padding: 20px 30px;
+    overflow: hidden;
+  }
+  .first-div{
     display: flex;
-    gap: 50px;
+    gap: 90px;
+    padding: 50px;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
     justify-content: center;
-    align-items: center;
-    padding-top: 70px;
-    z-index: 0;
+}
+.card-image, img{
+    width: 100%;
 }
 
-.images{
-    width: 100%;
+/* .content-img,
+.content-box{
+  padding: 30px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}  */
+
+  .explored-places-section{
     position: relative;
-    z-index: 1;
-    height: 400px;        
+    background-image: url("https://st4.depositphotos.com/11634452/23233/i/450/depositphotos_232338630-stock-photo-paper-texture-white-crumpled-paper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1940px ;
+    z-index: 0;
+  }
+.explored-places-first-container{
+    position: absolute;
+    z-index: 2;
 }
- .images::after{
+.explored-heading{
+padding-top: 100px;
+padding-left: 100px;
+padding-bottom: 50px;
+}
+  .explored-heading h2{
+    color: brown;
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  .explored-places-section::after{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(89, 87, 87, 0.5);
-    z-index: 2;
-}    */
+   background:white;
+   opacity: 0.7;
+    z-index: 1;
+  }
+ .images-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+    gap: 80px;
+  }
+  .images-content{
+    display: flex;
+   gap: 50px;
+  }
+ .images-content .first-image img{
+    height: 400px;
+  }
+
+  .the-festival h4{
+    margin-top: 20px;
+    color: gray;
+    font-size: 1rem;
+  }
+
+  .the-festival h2{
+    color: brown;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+.blog-section{
+   padding-top: 100px;
+   padding-bottom: 100px;
+    background-color:rgb(248, 245, 245)
+
+}
+.blog-heading{
+    margin-bottom: 50px;
+}
+.blog-heading h2{
+    color: brown;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.blog-content{
+    display: flex;
+    gap: 60px;
+}
+.blog-content img{
+    height: 500px;
+}
+.images-blog::after{
+    content: url("https://assets.isu.pub/document-structure/230415074603-58ae4ae466b01b6001d08a7efb82f0a0/v1/c2bea4c109d8d4ce56d6c7486b763826.jpeg?width=720&quality=85%2C50");
+    /* inset: 0; */
+    /* z-index: 0; */
+}
+
+
+
+
+
+
+  
+
+
+
+
+
 
 
 

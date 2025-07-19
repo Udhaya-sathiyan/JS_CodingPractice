@@ -75,7 +75,7 @@
  })
 
 
- const swiper = new Swiper("#first-swiper",{
+ const sswiper = new Swiper("#first-swiper",{
   
   loop: true,
   pagination:{
@@ -89,15 +89,28 @@
 
 
 
- const secswiper = new Swiper("#second-swiper",{
-loop:true,
-pagination:{
-  el:".swiper-sec-pagination",
-},
-scrollbar:{
-  el:".swiper-sec-scrollbar",
-},
- });
+ const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 50,
+  centerSlider: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+
+});
 
 
 
