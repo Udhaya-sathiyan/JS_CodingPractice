@@ -360,22 +360,28 @@ body {
   flex-direction: column;
 }  */
 
+
+
   .explored-places-section{
     position: relative;
     background-image: url("https://st4.depositphotos.com/11634452/23233/i/450/depositphotos_232338630-stock-photo-paper-texture-white-crumpled-paper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height:1940px ;
+    /* height: 1940px; */
+    height:2290px ;
+    width: 100%;
     z-index: 0;
   }
 .explored-places-first-container{
+    width: 100%;
     position: absolute;
     z-index: 2;
 }
 .explored-heading{
-padding-top: 100px;
-padding-left: 100px;
-padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
   .explored-heading h2{
     color: brown;
@@ -393,19 +399,33 @@ padding-bottom: 50px;
    opacity: 0.7;
     z-index: 1;
   }
+
+
  .images-container{
     display: flex;
-    flex-direction: column;
-    padding-left: 400px;
-    gap: 80px;
+    flex-wrap: wrap;
   }
-  .images-content{
-    display: flex;
-   gap: 50px;
-  }
- .images-content .first-image img{
-    height: 400px;
-  }
+.container-items{
+   width: 30%;
+    margin: 10px;
+}
+.container-items h6{
+    color: gray;
+    font-size: 1rem;font-weight: 100;
+}
+.container-items h2{
+    color: brown;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
 
   .the-festival h4{
     margin-top: 20px;
@@ -418,10 +438,12 @@ padding-bottom: 50px;
     font-size: 2rem;
     font-weight: 100;
   }
+
+
 .blog-section{
    padding-top: 100px;
    padding-bottom: 100px;
-    background-color:rgb(248, 245, 245)
+    background-color:white;
 
 }
 .blog-heading{
@@ -432,18 +454,311 @@ padding-bottom: 50px;
     font-size: 2rem;
     font-weight: 100;
 }
+
 .blog-content{
+    display: flex;
+    /* position: relative; */
+}
+
+
+.images-blog{
+    width: 30%;
+    position: relative;
+    margin: 10px;
+}
+
+
+
+/* .images-blog{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url("https://assets.isu.pub/document-structure/230415074603-58ae4ae466b01b6001d08a7efb82f0a0/v1/c2bea4c109d8d4ce56d6c7486b763826.jpeg?width=720&quality=85%2C50");
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    
+}*/
+
+ /* .images-blog:hover::after{
+    cursor: pointer;
+    position: absolute;
+    content: "The Courtyard Story";
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    inset: 0;
+    background: rgb(172, 61, 61);
+    opacity: 0.8;
+    z-index: 1;
+    transition:all 5s ease;
+  
+}  */
+
+.content-after{
+    position: absolute;
+    content:"";
+    background:rgb(172, 61, 61);
+    cursor: pointer;inset: 0;
+    opacity: 0.9;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: none;
+}
+
+
+
+
+.images-blog:hover .content-after{
+    display: flex;
+    opacity: 0.8;
+}
+
+
+.plan-image img {
+height: 600px;
+width: 500px;
+}
+.main-plan-container{
+    padding: 100px;
+    display: flex;  justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.plan-section{
+    background-color: rgb(251, 246, 239);
+    color: brown;
+}
+.details1{
     display: flex;
     gap: 60px;
 }
-.blog-content img{
-    height: 500px;
+.details2 p{
+margin-top: 40px;
 }
-.images-blog::after{
-    content: url("https://assets.isu.pub/document-structure/230415074603-58ae4ae466b01b6001d08a7efb82f0a0/v1/c2bea4c109d8d4ce56d6c7486b763826.jpeg?width=720&quality=85%2C50");
-    /* inset: 0; */
-    /* z-index: 0; */
+.plan-image{
+    width: 50%;
 }
+.plan-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.plan-content h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-left: 50px;
+}
+.plan-line{
+    margin-top: 10px;
+    height: 1px;
+    width: 155px;
+    background-color: brown;
+}
+.plan-line2{
+    height: 1px;
+    width: 400px;
+    background-color: brown;
+}
+
+.plan-contnet{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.plan-line3{
+    background-color: brown;
+    height: 1px;
+    width: 400px;
+    margin-top: 120px;
+}
+.box-p-tag{
+margin-top: 500px;
+}
+.details-button{
+    border: 1px solid brown;
+    height: 40px;
+    width: 40px;
+    padding-left: 10px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin-left: 125px;
+}
+.details-button:hover{
+    background-color: brown;
+    color: white;
+}
+.upper-section{
+    display: flex;
+}
+.contact-part{
+    padding: 40px;
+    background-image: url("https://rare-gallery.com/uploads/posts/585634-antiquarian.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    position: relative;
+    z-index:0;
+   
+}
+
+.contact-part::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.contact-entrance{
+    position: relative;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 50px;   
+    z-index: 2;
+}
+.contact-button .contact-btn{
+    border: none;
+    margin-left: 25px;
+    margin-top: 15px;
+    background: none;
+    color: white;
+    }
+    .contact-button{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+    border: 1px solid white;
+    }
+
+.about-part{
+    padding: 40px;
+    position: relative;
+    background-image: url("https://www.nobroker.in/blog/wp-content/uploads/2024/04/teak-wood-doors-of-south-indian-village.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    width: 50%;
+}
+.about-part::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.about-entrance{
+    position: relative;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;   
+    z-index: 2;
+}
+.about-button .abt-btn{
+    margin-left: 25px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    background: none;
+}
+.about-button{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.lower-section{
+    position: relative;
+    background-color: brown;
+    z-index: 0;
+}
+.lower-section::after{
+    content: "";
+    position: absolute;
+    background:transparent;
+    inset: 0;
+    z-index: 1;
+}
+.lower-section-firstpart{
+    padding-top: 100px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;   
+    z-index: 2;
+}
+.lower-section-firstpart .the-line{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+
+}
+.tittle-section{
+    text-align:center;
+}
+.tittle-section h2,h3{
+    font-size: 2rem;
+    line-height: 23px;
+    font-weight: 100;
+}
+.menu-content{
+    display: flex;
+    gap: 50px;
+}
+.menu-content a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+.menu-content a:hover{
+    text-decoration:underline;
+}
+.lower-section-upperpart h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f2e1e1;
+}
+.lower-section-secondpart{
+    position: relative;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+   justify-content: space-between;
+    z-index: 2; 
+}
+
+.contact-images{
+    display: flex;
+    gap: 30px;
+    margin-right: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

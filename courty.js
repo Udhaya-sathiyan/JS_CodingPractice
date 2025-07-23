@@ -1,5 +1,7 @@
 
 
+
+AOS.init();
 // var MainEntrance = document.querySelector(".main-entrance");
 // var MenuSection = document.querySelector(".menu-section");
 // var button = document.querySelector(".btn");
@@ -111,6 +113,8 @@
 
 
 });
+
+
 
 
 
