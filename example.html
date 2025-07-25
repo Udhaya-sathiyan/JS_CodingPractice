@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+
+.hamburger-menu{
+  background-color: bisque;
+  height: 120px;
+}
+
+.hamburger-line{
+  height: 1px;
+  width: 40px;
+  background-color: brown;
+  
+}
+.hamburger-line {
+        transition: all 0.3s ease-in-out;
+    }
+.hamburger-line:nth-child(2).open {
+        opacity: 0;
+    }
+.hamburger-line:first-child.open {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-line:nth-child(2).open {
+        transform: scaleX(0); 
+    }
+    .hamburger-line:last-child.open {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    
+
+</style>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="hamburger-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    </nav>
+  </header>
+
+   
+ 
+     
+
+    <script>
+         const container = document.querySelector('.container');
+   let rotationAngle = 0;
+
+   function rotateBox() {
+     rotationAngle += 45; 
+     container.style.transform = `rotate(${rotationAngle}deg)`;
+   }
+
+ 
+    </script>
+</body>
+</html>
